@@ -51,7 +51,7 @@
                                    <&macro_tap &kp U>,
                                    <&macro_release &kp LSHFT>,
                                    <&macro_tap &kp S>;
-                }
+                };
         };
 };
 
