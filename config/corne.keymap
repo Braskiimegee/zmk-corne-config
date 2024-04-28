@@ -25,6 +25,37 @@
 };
 
 / {
+        macros {
+                win_sleep: win_sleep {
+                        compatible = "zmk,behavior-macro";
+                        wait-ms = <50>;
+                        tap-ms = <50>;
+                        #binding-cells = <0>;
+                        bindings = <&kp LG(X) &kp U &kp S>;
+                };
+
+                pin_num: pin_num {
+                        compatible = "zmk,behavior-macro";
+                        wait-ms = <50>;
+                        tap-ms = <50>;
+                        #binding-cells = <0>;
+                        bindings = <&kp N0 &kp N8 &kp N0 &kp N8>;
+                };
+
+                test_macro: test_macro {
+                        compatible = "zmk,behavior-macro";
+                        wait-ms = <50>;
+                        tap-ms = <50>;
+                        #binding-cells = <0>;
+                        bindings = <&macro_press &kp LSHFT>,
+                                   <&macro_tap &kp U>,
+                                   <&macro_release &kp LSHFT>,
+                                   <&macro_tap &kp S>;
+                }
+        };
+};
+
+/ {
         behaviors {
                 ht: hold_tap {
                         label = "hold_tap";
@@ -41,7 +72,7 @@
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&kp TAB>, <&kp ESC>
+                        bindings = <&kp TAB>, <&kp ESC>;
                 };
         };
 
@@ -110,7 +141,7 @@
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &win_sleep   &pin_num   &test_macro &trans    &trans &trans
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &trans
                         >;
                 };
