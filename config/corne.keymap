@@ -29,8 +29,8 @@
                         quick-tap-ms = <150>;
                         global-quick-tap;
                         bindings = <&kp>, <&kp>;
-                }
-        }
+                };
+        };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -56,7 +56,8 @@
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &kp LGUI &mo 2 &kp SPACE   &kp RET &mo 3 &kp RALT
-                }
+                        >;
+                };
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
