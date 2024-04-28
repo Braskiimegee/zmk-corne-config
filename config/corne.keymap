@@ -106,9 +106,9 @@
                 number_layer {
 
                         bindings = <
-   &kp GRAVE &kp N7 &kp N8 &kp N9 &kp DEL  &kp KP_NLCK    &trans &trans   &kp UP   &trans &trans &trans
-   &kp RET   &kp N4 &kp N5 &kp N6 &kp BSPC  &kp PSCRN    &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
-   &kp N0    &kp N1 &kp N2 &kp N3 &kp DOT &kp INSERT    &trans &trans &trans &trans &trans &trans
+   &kp GRAVE &kp KP_NLCK &kp N7 &kp N8 &kp N9  &kp DEL    &trans &trans   &kp UP   &trans &trans &trans
+   &kp PSCRN  &kp RET &kp N4 &kp N5 &kp N6  &kp BSPC    &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+   &kp INSERT &kp N0 &kp N1 &kp N2 &kp N3 &kp DOT    &trans &trans &trans &trans &trans &trans
                   &trans &trans &trans                    &trans &trans &trans
                         >;
                 };
