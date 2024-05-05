@@ -57,7 +57,8 @@
                         compatible = "zmk,behavior-macro";
                         wait-ms = <50>;
                         tap-ms = <50>;
-                        #bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(D)>;
+                        #binding-cells = <0>;
+                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(D)>;
                 };
         };
 };
