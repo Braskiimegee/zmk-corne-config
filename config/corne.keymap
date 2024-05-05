@@ -79,7 +79,7 @@
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&kp ESC>, <&tog QWERTY;
+                        bindings = <&kp ESC>, <&tog QWERTY>;
                 };
 
                 td1: tap_dance_1 {
