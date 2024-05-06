@@ -59,7 +59,7 @@
                         wait-ms = <50>;
                         tap-ms = <50>;
                         #binding-cells = <0>;
-                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(D)>;
+                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(D) &kp RET>;
                 };
         };
 };
@@ -97,6 +97,13 @@
                         tapping-term-ms = <200>;
                         bindings = <&none>, <&tog MOUS>, <&tog GAMING>;
                 };
+
+                td3: tap_dance_3 {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&kp LCTRL>, <&kp CAPS>;
+                };
         };
 
         keymap {
@@ -110,7 +117,7 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
-   &mt LCTRL CAPS &kp A &ht LALT R &ht LCTRL S &ht LSHFT T &kp G   &kp M &ht RSHFT N  &ht RCTRL E &ht RALT I   &kp O    &kp SQT
+   &td3 &kp A &ht LALT R &ht LCTRL S &ht LSHFT T &kp G   &kp M &ht RSHFT N  &ht RCTRL E &ht RALT I   &kp O    &kp SQT
    &td1 &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &td2
                   &td0 &lt NUMS SPACE &kp DEL   &kp BSPC &lt SYMS SPACE &lt CONFIG RET
                         >;
