@@ -119,7 +119,7 @@
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <500>;
-                        bindings = <&none>, <&tog MOUS>, <&tog GAMING>;
+                        bindings = <&tog NUMS>, <&tog MOUS>, <&tog GAMING>;
                 };
 
                 td3: tap_dance_3 {
@@ -172,7 +172,7 @@
                         bindings = <
    &kp GRAVE &kp KP_NLCK &kp N7 &kp N8 &kp N9  &kp DEL    &trans &trans   &kp UP   &trans &trans &trans
    &kp PSCRN  &kp RET &kp N4 &ht LCTRL N5 &ht LSHFT N6  &kp BSPC    &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
-   &kp INSERT &kp N0 &kp N1 &kp N2 &kp N3 &kp DOT    &trans &trans &trans &trans &trans &tog NUMS
+   &kp INSERT &kp N0 &kp N1 &kp N2 &kp N3 &kp DOT    &trans &trans &trans &trans &trans &none
                   &trans &trans &trans                    &trans &trans &trans
                         >;
                 };
