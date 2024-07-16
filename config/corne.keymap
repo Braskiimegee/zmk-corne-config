@@ -12,9 +12,9 @@
 #define DEFAULT 0
 #define QWERTY 1
 #define GAMING 2
-#define NUMS 3
-#define SYMS 4
-#define MOUS 5
+#define MOUS 3
+#define NUMS 4
+#define SYMS 5
 #define CONFIG 6
 
 &lt {
@@ -175,6 +175,15 @@
                         >;
                 };
 
+                mousing_layer {
+                        bindings = <
+    &trans &trans &kp LA(RET) &kp LA(F1) &mkp RCLK &trans &trans &trans &kp UP &trans &trans &trans
+    &trans &trans &kp LCTRL &kp LSHFT &mkp LCLK &trans &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+    &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &mkp MCLK &trans &trans &trans &trans &trans &trans &tog MOUS
+                        &kp LC(S) &lt NUMS SPACE &kp DEL &kp BSPC &kp SPACE &trans
+                        >;
+                };
+
                 number_layer {
 
                         bindings = <
@@ -192,15 +201,6 @@
     &kp LCTRL &kp BSLH &kp LBRC &kp LBKT &kp LPAR &kp MINUS &kp EQUAL &kp RPAR &kp RBKT &kp RBRC &kp FSLH &trans
     &kp LSHFT &trans &kp SQT &kp DQT &kp LT &kp UNDER &kp PLUS &kp GT &trans &trans &trans &trans 
                   &trans &trans  &trans  &trans  &trans  &kp C_SLEEP 
-                        >;
-                };
-
-                mousing_layer {
-                        bindings = <
-    &mkp MCLK &trans &trans &trans &mkp RCLK &trans &trans &trans &kp UP &trans &trans &trans
-    &trans &trans &kp LCTRL &kp LSHFT &mkp LCLK &trans &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
-    &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &mkp MCLK &trans &trans &trans &trans &trans &trans &tog MOUS
-                        &kp LC(S) &kp SPACE &kp DEL &kp BSPC &trans &trans
                         >;
                 };
 
