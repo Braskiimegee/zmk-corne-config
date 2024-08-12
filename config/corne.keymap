@@ -151,7 +151,7 @@
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
    &td3 &kp A &ht LALT R &ht LCTRL S &ht LSHFT T &kp G   &kp M &ht RSHFT N  &ht RCTRL E &ht RALT I   &kp O    &kp SQT
    &td1 &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &td2
-                  &td0 &kp DEL &lt NUMS SPACE   &lt SYMS SPACE &kp BSPC &lt CONFIG RET
+                  &td0 &lt NUMS SPACE &kp DEL   &kp BSPC &lt SYMS SPACE &lt CONFIG RET
                         >;
                 };
 
@@ -161,26 +161,26 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &tog QWERTY &mo NUMS &kp SPACE    &kp RET &mo 3 &kp RALT
+                  &mo NUMS &kp SPACE &tog QWERTY   &kp RET &mo 3 &kp RALT
                         >;
                 };
 
                 gaming_layer {
 
                         bindings = <
-    &kp ESC &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P 
+    &kp TAB &kp ESC &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P 
     &kp LALT &kp LSHFT &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp RET 
     &none &kp LCTRL &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &tog GAMING 
-                        &none &mo NUMS &kp SPACE &kp BSPC &none &kp RET
+                        &none &kp SPACE &mo NUMS &kp BSPC &none &none
                         >;
                 };
 
                 mousing_layer {
                         bindings = <
     &trans &trans &kp LA(RET) &kp LA(F1) &mkp RCLK &trans &trans &trans &kp UP &trans &trans &trans
-    &trans &trans &kp LCTRL &kp LSHFT &mkp LCLK &trans &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+    &trans &trans &kp LCTRL &kp LSHFT &mkp LCLK &kp SPACE &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
     &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &mkp MCLK &trans &trans &trans &trans &trans &trans &tog MOUS
-                        &kp LC(S) &kp DEL &lt NUMS SPACE   &kp SPACE &kp BSPC &trans
+                        &kp LC(S) &lt NUMS SPACE &kp DEL &kp BSPC &kp SPACE &trans
                         >;
                 };
 
