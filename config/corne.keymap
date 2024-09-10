@@ -91,7 +91,15 @@
                         wait-ms = <50>;
                         tap-ms = <50>;
                         #binding-cells = <0>;
-                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(A) &kp RET>;
+                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(F) &kp RET>;
+                };
+
+                comp_macro: comp_macro {
+                        compatible = "zmk,behavior-macro";
+                        wait-ms = <50>;
+                        tap-ms = <50>;
+                        #binding-cells = <0>;
+                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(R) &kp RET>;
                 };
         };
 };
@@ -212,7 +220,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5         &kp F6   &kp F7   &kp F8 &kp  F9    &kp F10 &kp F11 &kp F12
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &screen_macro &none &old_pass &none &none &none
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &screen_macro &old_pass &comp_macro &none &none &none
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &win_sleep   &pin_num   &pass_macro &my_num  &thresh_macro &trans
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &trans
                         >;
