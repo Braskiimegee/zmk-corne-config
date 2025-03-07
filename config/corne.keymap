@@ -196,7 +196,7 @@
                 mousing_layer {
                         bindings = <
     &trans &trans &kp LA(RET) &kp LA(F1) &mkp RCLK &trans &trans &trans &kp UP &trans &trans &trans
-    &trans &trans &kp LCTRL &kp LSHFT &mkp LCLK &kp SPACE &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+    &kp LC(A) &trans &kp LCTRL &kp LSHFT &mkp LCLK &kp SPACE &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
     &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &mkp MCLK &trans &trans &trans &trans &trans &trans &tog MOUS
                         &kp LC(S) &kp DEL &lt NUMS SPACE   &kp SPACE &kp BSPC &trans
                         >;
