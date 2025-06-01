@@ -85,7 +85,7 @@
                         wait-ms = <50>;
                         tap-ms = <50>;
                         #binding-cells = <0>;
-                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(F) &kp RET>;
+                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(G) &kp RET>;
                 };
 
                 new25q1: new25q1 {
@@ -93,7 +93,7 @@
                         wait-ms = <50>;
                         tap-ms = <50>;
                         #binding-cells = <0>;
-                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(G) &kp RET>;
+                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(P) &kp RET>;
                 };
 
                 comp_macro: comp_macro {
