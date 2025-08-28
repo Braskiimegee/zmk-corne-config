@@ -85,7 +85,7 @@
                         wait-ms = <50>;
                         tap-ms = <50>;
                         #binding-cells = <0>;
-                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(G) &kp RET>;
+                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp EXCL &kp HASH &kp LS(A) &kp RET>;
                 };
 
                 new25q1: new25q1 {
@@ -93,7 +93,7 @@
                         wait-ms = <50>;
                         tap-ms = <50>;
                         #binding-cells = <0>;
-                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(P) &kp RET>;
+                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(T) &kp RET>;
                 };
 
                 comp_macro: comp_macro {
@@ -101,7 +101,7 @@
                         wait-ms = <50>;
                         tap-ms = <50>;
                         #binding-cells = <0>;
-                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(R) &kp RET>;
+                        bindings = <&kp LS(R) &kp A &kp M &kp E &kp N &kp LS(G) &kp U &kp Y &kp N0 &kp N8 &kp N0 &kp N8 &kp LS(G) &kp RET>;
                 };
 
                 pass: pass {
@@ -230,7 +230,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5         &kp F6   &kp F7   &kp F8 &kp  F9    &kp F10 &kp F11 &kp F12
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &screen_macro &old &comp_macro &pass &none &none
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &screen_macro &comp_macro &old &pass &none &none
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &win_sleep   &pin_num   &new25q1 &my_num  &thresh_macro &trans
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &trans
                         >;
